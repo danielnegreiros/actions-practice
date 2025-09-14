@@ -1,0 +1,11 @@
+name: Workflow Cmds
+on: 
+  - push:
+    - main
+
+jobs:
+  testing-wf-cmds:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Error message
+        run: echo "::error::Missing something"
