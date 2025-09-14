@@ -1,7 +1,8 @@
 name: Workflow Cmds
 on: 
-  - push:
-    - main
+  push: 
+    branches: 
+      - main
 
 jobs:
   testing-wf-cmds:
