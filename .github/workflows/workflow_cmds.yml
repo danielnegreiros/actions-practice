@@ -10,3 +10,13 @@ jobs:
     steps:
       - name: Error message
         run: echo "::error::Missing something"
+      - name: Group message
+        run: |
+          echo "::group:: My Gtroup Tile"
+          echo "Hey there"
+          echo "They there 2"
+          echo "::endgroup::"
+      - name: Masking a values
+        run: echo "::add-mask::Secret String"
+      - name: Show secret
+        run: echo "Secret String"
