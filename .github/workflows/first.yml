@@ -26,5 +26,4 @@ jobs:
     needs: run-shell-commands
     steps:
       - name: Windows cmd
-        run: ipaddr
-        
+        run: ipconfig
