@@ -11,8 +11,8 @@ jobs:
         run: |
           echo "Hello World" 
           echo "Hello World 2" 
-      - name: Date
-        run: date
+      - name: fail pelase
+        run: exit 1
 
 
   parallel-job:
