@@ -1,0 +1,15 @@
+name: First Workflow
+on:
+  - push
+
+
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simple echo
+        run: |
+          echo "Hello World" 
+          echo "Hello World 2" 
+      - name: Date
+        run: date
