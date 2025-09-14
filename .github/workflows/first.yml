@@ -13,3 +13,18 @@ jobs:
           echo "Hello World 2" 
       - name: Date
         run: date
+
+
+  parallel-job:
+    runs-on: macos-latest
+    steps:
+      - name: Mac OS Cmd
+        run: sw_vers
+
+  dependant-job:
+    runs-on: windows-latest
+    needs: run-shell-commands
+    steps:
+      - name: Windows cmd
+        run: ipaddr
+        
