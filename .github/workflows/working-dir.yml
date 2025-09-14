@@ -22,7 +22,6 @@ jobs:
       - name: Display workinh wir
         run: |
           pwd
-          ls -lhtr
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
