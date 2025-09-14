@@ -3,12 +3,13 @@ on:
   push:
     branches:
       - main
-    
+
 jobs:
   display-vd-info:
     runs-on: ubuntu-latest
     steps:
-      - name: Display workinh wir
+      - name: Display workinh override
+        working-directory: /tmp
         run: |
           pwd
           ls -lhtr
@@ -16,6 +17,13 @@ jobs:
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
 
+      - name: Display workinh wir
+        run: |
+          pwd
+          ls -lhtr
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
   display-vd-windows:
     runs-on: windows-latest
     steps:
