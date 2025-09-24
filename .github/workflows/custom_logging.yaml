@@ -1,7 +1,7 @@
-name: Workflow Cmds
-on: 
-  push: 
-    branches: 
+name: Custom Logging
+on:
+  push:
+    branches:
       - main
 
 jobs:

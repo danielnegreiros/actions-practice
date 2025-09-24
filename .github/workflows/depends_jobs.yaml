@@ -8,10 +8,8 @@ jobs:
     steps:
       - name: Simple echo
         run: |
-          echo "Hello World" 
+          echo "Hello World"
           echo "Hello World 2"
-      - name: fail pelase
-        run: exit 1
 
   parallel-job:
     runs-on: macos-latest
