@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hey
-        run: echo There
+        run: |
+          echo There
+          exit 1
