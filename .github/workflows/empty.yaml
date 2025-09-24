@@ -1,0 +1,10 @@
+name: Build
+on:
+  - push
+
+jobs:
+  do-nothing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hey
+        run: echo There
