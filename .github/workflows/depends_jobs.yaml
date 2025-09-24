@@ -1,6 +1,6 @@
 name: First Workflow
 on:
-  push: {}
+  - push
 
 jobs:
   run-shell-commands:
